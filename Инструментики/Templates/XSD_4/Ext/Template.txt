@@ -1,0 +1,176 @@
+﻿<!--
+Copyright (c) 2024 Рябов Игорь (https://t.me/instrumentiki1C)
+
+Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (далее — Программное обеспечение),
+безвозмездно использовать Программное обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию,
+распространение, сублицензирование и/или продажу копий Программного обеспечения,
+а также лицам, которым предоставляется данное Программное обеспечение, при соблюдении следующих условий:
+
+Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного обеспечения.
+
+ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ,
+СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ
+ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ,
+ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+-->
+
+<xs:schema xmlns:ns1="http://v8.1c.ru/8.1/data/core" xmlns:tns="instrumentiki" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="instrumentiki" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<xs:simpleType name="КонсольHTTP_ГдеВыполнять">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Сервер"/>
+			<xs:enumeration value="Клиент"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольHTTP_МетодHTTP">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GET"/>
+			<xs:enumeration value="POST"/>
+			<xs:enumeration value="CONNECT"/>
+			<xs:enumeration value="DELETE"/>
+			<xs:enumeration value="HEAD"/>
+			<xs:enumeration value="OPTIONS"/>
+			<xs:enumeration value="PUT"/>
+			<xs:enumeration value="TRACE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольHTTP_МетодАутентификации">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="БезАутентификации"/>
+			<xs:enumeration value="Базовая"/>
+			<xs:enumeration value="ОС"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольЗапросов_ВидПараметра">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Простой"/>
+			<xs:enumeration value="Список"/>
+			<xs:enumeration value="Таблица"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольЗапросов_МетодВыполненияЗапроса">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Выполнить"/>
+			<xs:enumeration value="ВыполнитьПакет"/>
+			<xs:enumeration value="ВыполнитьПакетСПромежуточнымиДанными"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольЗапросов_ОграничениеКоличестваСтрок">
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="500"/>
+			<xs:enumeration value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="НепустаяСтрока">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="СетевойПорт">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="65535"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="СравнениеПроизводительностиКода_ГдеВыполнять">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Сервер"/>
+			<xs:enumeration value="Клиент"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="КонсольHTTP_ВидТелаЗапроса">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="БезТела"/>
+			<xs:enumeration value="Строка"/>
+			<xs:enumeration value="ДвоичныеДанные"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="КонсольHTTP_Данные">
+		<xs:sequence>
+			<xs:element name="ИмяСервера" type="tns:НепустаяСтрока"/>
+			<xs:element name="Порт" type="tns:СетевойПорт"/>
+			<xs:element name="ЗащищенноеСоединение" type="xs:boolean"/>
+			<xs:element name="ГдеВыполнять" type="tns:КонсольHTTP_ГдеВыполнять"/>
+			<xs:element name="МетодHTTP" type="tns:КонсольHTTP_МетодHTTP"/>
+			<xs:element name="АдресРесурса" type="xs:string"/>
+			<xs:element name="Таймаут" type="xs:integer"/>
+			<xs:element name="МетодАутентификации" type="tns:КонсольHTTP_МетодАутентификации"/>
+			<xs:element name="ИмяПользователя" type="xs:string"/>
+			<xs:element name="Пароль" type="xs:string"/>
+			<xs:element name="ПараметрыЗапроса" type="tns:КонсольHTTP_ПараметрыЗапросаИЗаголовки" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ЗаголовкиЗапроса" type="tns:КонсольHTTP_ПараметрыЗапросаИЗаголовки" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ВидТелаЗапроса" type="tns:КонсольHTTP_ВидТелаЗапроса"/>
+			<xs:element name="ТелоЗапросаСтрока" type="xs:string"/>
+			<xs:element name="ТелоЗапросаДвоичныеДанные" type="ns1:ValueStorage"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="КонсольHTTP_ПараметрыЗапросаИЗаголовки">
+		<xs:sequence>
+			<xs:element name="Ключ" type="tns:НепустаяСтрока"/>
+			<xs:element name="Значение" type="xs:string"/>
+			<xs:element name="Описание" type="xs:string" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="КонсольЗапросов_Данные">
+		<xs:sequence>
+			<xs:element name="ТекстЗапроса" type="xs:string"/>
+			<xs:element name="МетодВыполненияЗапроса" type="tns:КонсольЗапросов_МетодВыполненияЗапроса"/>
+			<xs:element name="ОграничениеКоличестваСтрок" type="tns:КонсольЗапросов_ОграничениеКоличестваСтрок"/>
+			<xs:element name="ПараметрыЗапроса" type="tns:КонсольЗапросов_ПараметрЗапроса" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ПередВыполнением" type="xs:string"/>
+			<xs:element name="ПриВыборке" type="xs:string"/>
+			<xs:element name="ПослеВыполнения" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="КонсольЗапросов_ПараметрЗапроса">
+		<xs:sequence>
+			<xs:element name="Имя" type="tns:НепустаяСтрока"/>
+			<xs:element name="ВидПараметра" type="tns:КонсольЗапросов_ВидПараметра"/>
+			<xs:element name="Значение" type="ns1:ValueStorage"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="КонсольКода_Данные">
+		<xs:sequence>
+			<xs:element name="Текст" type="xs:string"/>
+			<xs:element name="ОбменДанными" type="tns:КонсольКода_КлючЗначениеОбменаДанными" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="НаКлиенте" type="xs:boolean" default="false"/>
+		<xs:attribute name="ПривилегированныйРежим" type="xs:boolean" default="false"/>
+	</xs:complexType>
+	<xs:complexType name="КонсольКода_КлючЗначениеОбменаДанными">
+		<xs:sequence>
+			<xs:element name="Ключ" type="tns:НепустаяСтрока"/>
+			<xs:element name="Значение" type="ns1:ValueStorage"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ОтладкаРегулярныхВыражений_Данные">
+		<xs:sequence>
+			<xs:element name="Выражение" type="tns:НепустаяСтрока"/>
+			<xs:element name="ИгнорироватьРегистр" type="xs:boolean"/>
+			<xs:element name="ПроверяемыеСтроки" type="tns:НепустаяСтрока" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="СравнениеПроизводительностиКода_Данные">
+		<xs:sequence>
+			<xs:element name="ГдеВыполнять" type="tns:СравнениеПроизводительностиКода_ГдеВыполнять"/>
+			<xs:element name="КодИнициализации" type="xs:string"/>
+			<xs:element name="ТестируемыйКод" type="tns:СравнениеПроизводительностиКода_СтрТестируемыйКод" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="ВремяВыполнения" type="xs:unsignedInt"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="СравнениеПроизводительностиКода_СтрТестируемыйКод">
+		<xs:sequence>
+			<xs:element name="Код" type="xs:string"/>
+			<xs:element name="Представление" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="УниверсальныйПакет">
+		<xs:sequence>
+			<xs:element name="ВерсияФормата" type="xs:positiveInteger"/>
+			<xs:element name="ИмяИнструмента" type="tns:НепустаяСтрока"/>
+			<xs:element name="ИмяТипаОбъекта" type="tns:НепустаяСтрока"/>
+			<xs:element name="Объект" type="xs:base64Binary"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

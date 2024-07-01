@@ -1,0 +1,80 @@
+﻿<!--
+Copyright (c) 2024 Рябов Игорь (https://t.me/instrumentiki1C)
+
+Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (далее — Программное обеспечение),
+безвозмездно использовать Программное обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию,
+распространение, сублицензирование и/или продажу копий Программного обеспечения,
+а также лицам, которым предоставляется данное Программное обеспечение, при соблюдении следующих условий:
+
+Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного обеспечения.
+
+ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ,
+СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ
+ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ,
+ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+-->
+
+<УниверсальныйПакет xmlns="instrumentiki" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ВерсияФормата>1</ВерсияФормата>
+	<ИмяИнструмента>Консоль кода</ИмяИнструмента>
+	<ИмяТипаОбъекта>КонсольКода_Данные</ИмяТипаОбъекта>
+	<Объект>PNCa0L7QvdGB0L7Qu9GM0JrQvtC00LBf0JTQsNC90L3Ri9C1IHhtbG5zPSJpbnN0
+
+cnVtZW50aWtpIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxT
+
+Y2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hl
+
+bWEtaW5zdGFuY2UiINCd0LDQmtC70LjQtdC90YLQtT0idHJ1ZSIg0J/RgNC40LLQ
+
+uNC70LXQs9C40YDQvtCy0LDQvdC90YvQudCg0LXQttC40Lw9ImZhbHNlIj4KCTzQ
+
+otC10LrRgdGCPi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLyDQlNCw0L3Q
+
+vdGL0Lkg0L/RgNC40LzQtdGAINC/0L7QutCw0LfRi9Cy0LDQtdGCINGA0LDQsdC+
+
+0YLRgyDRgSDRgdC+0L7RgtCy0LXRgtGB0YLQstC40LXQvCDQntCx0LzQtdC90JTQ
+
+sNC90L3Ri9C80LgKLy8g0JrQvtC0INC90LjQttC1INGA0LDQt9Cx0LjQstCw0LXR
+
+giDQpNCY0J4g0L3QsCDRhNCw0LzQuNC70LjRjiwg0LjQvNGPINC4INC+0YLRh9C1
+
+0YHRgtCy0L4KLy8g0KTQmNCeINC30LDQtNCw0ZHRgtGB0Y8g0YfQtdGA0LXQtyDR
+
+gtCw0LHQu9C40YbRgyDRgdC/0YDQsNCy0LAg0L7RgiDQtNCw0L3QvdC+0LPQviDR
+
+gtC10LrRgdGC0L7QstC+0LPQviDQv9C+0LvRjwovLyDQoNC10LfRg9C70YzRgtCw
+
+0YIg0L/QtdGA0LXQtNCw0ZHRgtGB0Y8g0LIg0Y3RgtGDINC20LUg0YLQsNCx0LvQ
+
+uNGG0YMKLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgrQpNCY0J4gPSDQntCx
+
+0LzQtdC90JTQsNC90L3Ri9C80LhbItCk0JjQniJdOwrQpNGA0LDQs9C80LXQvdGC
+
+0YsgPSDQodGC0YDQoNCw0LfQtNC10LvQuNGC0Ywo0KTQmNCeLCAiICIsINCb0L7Q
+
+ttGMKTsKCtCe0LHQvNC10L3QlNCw0L3QvdGL0LzQuFsi0KTQsNC80LjQu9C40Y8i
+
+XSA9INCh0L7QutGA0JvQnyjQpNGA0LDQs9C80LXQvdGC0YtbMF0pOwrQntCx0LzQ
+
+tdC90JTQsNC90L3Ri9C80LhbItCY0LzRjyJdID0g0KHQvtC60YDQm9CfKNCk0YDQ
+
+sNCz0LzQtdC90YLRi1sxXSk7CtCe0LHQvNC10L3QlNCw0L3QvdGL0LzQuFsi0J7R
+
+gtGH0LXRgdGC0LLQviJdID0g0KHQvtC60YDQm9CfKNCk0YDQsNCz0LzQtdC90YLR
+
+i1syXSk7PC/QotC10LrRgdGCPgoJPNCe0LHQvNC10L3QlNCw0L3QvdGL0LzQuD4K
+
+CQk80JrQu9GO0Yc+0KTQmNCePC/QmtC70Y7Rhz4KCQk80JfQvdCw0YfQtdC90LjQ
+
+tT5BUUU5QUFBQUFBQUFBTys3djNzaVV5SXNJdENmMFlQUmlOQzYwTGpRdlNEUWtO
+
+QzcwTFhRdXRHQjBMRFF2ZEMwDQowWUFnMEtIUXRkR0EwTFBRdGRDMTBMTFF1TkdI
+
+SW4wPTwv0JfQvdCw0YfQtdC90LjQtT4KCTwv0J7QsdC80LXQvdCU0LDQvdC90YvQ
+
+vNC4Pgo8L9Ca0L7QvdGB0L7Qu9GM0JrQvtC00LBf0JTQsNC90L3Ri9C1Pg==</Объект>
+</УниверсальныйПакет>

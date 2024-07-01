@@ -1,0 +1,17 @@
+{
+	"$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+	"language": "ru",
+	"diagnostics": {
+		"parameters": {
+			"MagicNumber": false,
+			"MissingSpace": {
+				"allowMultipleCommas": true
+			},
+			"LatinAndCyrillicSymbolInWord": false,
+			"Typo": false,
+			"CommonModuleMissingAPI": false,
+			"DuplicateStringLiteral": false,
+			"NestedFunctionInParameters": false
+		}
+	}
+}

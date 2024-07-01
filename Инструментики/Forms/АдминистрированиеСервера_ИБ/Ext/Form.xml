@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Информационная база</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="78">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="79"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="93">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="94"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Панели" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панели</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПанелиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ПанельСлева" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель слева</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПанельСлеваРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Имя" id="7">
+							<DataPath>Имя</DataPath>
+							<ContextMenu name="ИмяКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">ИмяПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Описание" id="10">
+							<DataPath>Описание</DataPath>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="КодЯзыка" id="90">
+							<DataPath>КодЯзыка</DataPath>
+							<ContextMenu name="КодЯзыкаКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="КодЯзыкаРасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<InputField name="ЗащищенноеСоединение" id="13">
+							<DataPath>ЗащищенноеСоединение</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выключено</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Незащищенное</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Только при установке соединения</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">ПриУстановкеСоединения</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Постоянно</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Защищенное</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ЗащищенноеСоединениеКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ЗащищенноеСоединениеРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<CheckBoxField name="РазрешитьВыдачуЛицензийСервером" id="16">
+							<DataPath>РазрешитьВыдачуЛицензийСервером</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РазрешитьВыдачуЛицензийСерверомКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="РазрешитьВыдачуЛицензийСерверомРасширеннаяПодсказка" id="18"/>
+						</CheckBoxField>
+						<CheckBoxField name="РезервированиеРабочихПроцессов" id="22">
+							<DataPath>РезервированиеРабочихПроцессов</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РезервированиеРабочихПроцессовКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="РезервированиеРабочихПроцессовРасширеннаяПодсказка" id="24"/>
+						</CheckBoxField>
+						<CheckBoxField name="ОбязательноеВнешнееУправление" id="19">
+							<DataPath>ОбязательноеВнешнееУправление</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОбязательноеВнешнееУправлениеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ОбязательноеВнешнееУправлениеРасширеннаяПодсказка" id="21"/>
+						</CheckBoxField>
+						<InputField name="ВнешнееУправлениеСеансами" id="25">
+							<DataPath>ВнешнееУправлениеСеансами</DataPath>
+							<ContextMenu name="ВнешнееУправлениеСеансамиКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ВнешнееУправлениеСеансамиРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<UsualGroup name="ГруппаПрофилиБезопасности" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Профили безопасности</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаПрофилиБезопасностиРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<InputField name="ПрофильБезопасности" id="30">
+									<DataPath>ПрофильБезопасности</DataPath>
+									<ContextMenu name="ПрофильБезопасностиКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ПрофильБезопасностиРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="ПрофильБезопасностиБезопасногоРежима" id="33">
+									<DataPath>ПрофильБезопасностиБезопасногоРежима</DataPath>
+									<ContextMenu name="ПрофильБезопасностиБезопасногоРежимаКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ПрофильБезопасностиБезопасногоРежимаРасширеннаяПодсказка" id="35"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПанельСправа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель справа</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПанельСправаРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСУБД" id="36">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры базы данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="37"/>
+							<ChildItems>
+								<InputField name="ТипСУБД" id="38">
+									<DataPath>ТипСУБД</DataPath>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Microsoft SQL Server</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">MSSQLServer</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>PostgreSQL</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">PostgreSQL</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>IBM DB2</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">IBMDB2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Oracle</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">OracleDatabase</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипСУБДКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="СерверСУБД" id="50">
+									<DataPath>СерверСУБД</DataPath>
+									<ContextMenu name="СерверСУБДКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СерверСУБДРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ИмяБазыСУБД" id="41">
+									<DataPath>ИмяБазыСУБД</DataPath>
+									<ContextMenu name="ИмяБазыСУБДКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ИмяБазыСУБДРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ЛогинСУБД" id="44">
+									<DataPath>ЛогинСУБД</DataPath>
+									<ContextMenu name="ЛогинСУБДКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ЛогинСУБДРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ПарольСУБД" id="47">
+									<DataPath>ПарольСУБД</DataPath>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольСУБДКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ПарольСУБДРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="СмещениеДат" id="85">
+									<DataPath>СмещениеДат</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<Width>32</Width>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>0</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>2000</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2000</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СмещениеДатКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="СмещениеДатРасширеннаяПодсказка" id="87">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Смещение дат в информационной базе (0 или 2000). Используется только для Microsoft SQL Server.
+&lt;link https://its.1c.ru/db/metod8dev/content/4055/hdoc&gt;Подробнее на ИТС&lt;/&gt;</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
+								<CheckBoxField name="СоздатьБазуДанных" id="82">
+									<DataPath>СоздатьБазуДанных</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СоздатьБазуДанныхКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="СоздатьБазуДанныхРасширеннаяПодсказка" id="84"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаБлокировки" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Блокировки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаБлокировкиРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<CheckBoxField name="БлокировкаРегламентныхЗаданий" id="58">
+									<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="60"/>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаБлокировкаНачалаСеансов" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Блокировка начала сеансов</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаБлокировкаНачалаСеансовРасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<CheckBoxField name="БлокировкаНачалаСеансов" id="55">
+											<DataPath>БлокировкаНачалаСеансов</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="БлокировкаНачалаСеансовКонтекстноеМеню" id="56"/>
+											<ExtendedTooltip name="БлокировкаНачалаСеансовРасширеннаяПодсказка" id="57"/>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаПериодБлокировки" id="61">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период блокировки</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПериодБлокировкиРасширеннаяПодсказка" id="62"/>
+											<ChildItems>
+												<InputField name="НачалоБлокировкиСеансов" id="63">
+													<DataPath>НачалоБлокировкиСеансов</DataPath>
+													<ContextMenu name="НачалоБлокировкиСеансовКонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="НачалоБлокировкиСеансовРасширеннаяПодсказка" id="65"/>
+												</InputField>
+												<InputField name="ОкончаниеБлокировкиСеансов" id="66">
+													<DataPath>ОкончаниеБлокировкиСеансов</DataPath>
+													<ContextMenu name="ОкончаниеБлокировкиСеансовКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="ОкончаниеБлокировкиСеансовРасширеннаяПодсказка" id="68"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="КодРазрешения" id="69">
+											<DataPath>КодРазрешения</DataPath>
+											<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="71"/>
+										</InputField>
+										<InputField name="ПараметрБлокировкиСеансов" id="72">
+											<DataPath>ПараметрБлокировкиСеансов</DataPath>
+											<ContextMenu name="ПараметрБлокировкиСеансовКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="ПараметрБлокировкиСеансовРасширеннаяПодсказка" id="74"/>
+										</InputField>
+										<InputField name="СообщениеБлокировкиСеансов" id="75">
+											<DataPath>СообщениеБлокировкиСеансов</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="СообщениеБлокировкиСеансовКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="СообщениеБлокировкиСеансовРасширеннаяПодсказка" id="77"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Инструментики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОписаниеИнформационнойБазы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Имя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Описание" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗащищенноеСоединение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Защищенное соединение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="БлокировкаНачалаСеансов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блокировка начала сеансов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="БлокировкаРегламентныхЗаданий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блокировка регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РазрешитьВыдачуЛицензийСервером" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить выдачу лицензий сервером</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОбязательноеВнешнееУправление" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обязательно использование внешнего управления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РезервированиеРабочихПроцессов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервирование рабочих процессов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВнешнееУправлениеСеансами" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешнее управление сеансами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПрофильБезопасности" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль безопасности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПрофильБезопасностиБезопасногоРежима" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль безопасности безопасного режима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТипСУБД" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИмяБазыСУБД" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя базы данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ЛогинСУБД" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь сервера БД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПарольСУБД" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль сервера БД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СерверСУБД" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер баз данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="НачалоБлокировкиСеансов" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОкончаниеБлокировкиСеансов" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодРазрешения" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код разрешения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПараметрБлокировкиСеансов" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СообщениеБлокировкиСеансов" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СмещениеДат" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смещение дат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СоздатьБазуДанных" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать базу данных при отсутствии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодЯзыка" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код языка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЭтоНовая" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это новая</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОписаниеИнформационнойБазы">
+			<Type/>
+		</Parameter>
+		<Parameter name="ЭтоНовая">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИменаПрофилейБезопасности">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

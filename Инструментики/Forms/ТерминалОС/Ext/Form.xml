@@ -3,17 +3,17 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Командная строка Windows</v8:content>
+			<v8:content>Терминал ОС</v8:content>
 		</v8:item>
 	</Title>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаВыполнитьНаСервере" id="12">
+			<Button name="ФормаВыполнитьСкрипт" id="12">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ВыполнитьКоманду</CommandName>
-				<ExtendedTooltip name="ФормаВыполнитьНаСервереРасширеннаяПодсказка" id="13"/>
+				<CommandName>Form.Command.ВыполнитьСкрипт</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьСкриптРасширеннаяПодсказка" id="13"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -21,10 +21,16 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="ТекстКоманды" id="1">
-			<DataPath>ТекстКоманды</DataPath>
-			<ContextMenu name="ТекстКомандыКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ТекстКомандыРасширеннаяПодсказка" id="3"/>
+		<RadioButtonField name="ТипСкрипта" id="28">
+			<DataPath>ТипСкрипта</DataPath>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ContextMenu name="ТипСкриптаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ТипСкриптаРасширеннаяПодсказка" id="30"/>
+		</RadioButtonField>
+		<InputField name="ТекстСкрипта" id="1">
+			<DataPath>ТекстСкрипта</DataPath>
+			<ContextMenu name="ТекстСкриптаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТекстСкриптаРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<UsualGroup name="Группа1" id="20">
 			<Behavior>Usual</Behavior>
@@ -53,11 +59,6 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<LabelField name="СтатусВыполнения" id="14">
-			<DataPath>СтатусВыполнения</DataPath>
-			<ContextMenu name="СтатусВыполненияКонтекстноеМеню" id="15"/>
-			<ExtendedTooltip name="СтатусВыполненияРасширеннаяПодсказка" id="16"/>
-		</LabelField>
 		<LabelField name="КодЗавершения" id="25">
 			<DataPath>КодЗавершения</DataPath>
 			<HorizontalAlign>Left</HorizontalAlign>
@@ -84,11 +85,11 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="ТекстКоманды" id="2">
+		<Attribute name="ТекстСкрипта" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Текст команды</v8:content>
+					<v8:content>Текст скрипта</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -109,32 +110,6 @@
 			</Title>
 			<Type>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="НаСервереWindows" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>На сервере windows</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="СтатусВыполнения" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Статус выполнения</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредупреждениеДляФайловойБазыУжеВыдано" id="6">
@@ -191,6 +166,21 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипСкрипта" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип скрипта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
@@ -258,24 +248,24 @@
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
-		<Command name="ВыполнитьКоманду" id="2">
+		<Command name="ВыполнитьСкрипт" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
+					<v8:content>Выполнить скрипт</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить команду на стороне сервера</v8:content>
+					<v8:content>Выполнить скрипт на стороне сервера</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ВыполнитьКомандуКоманднойСтроки</Action>
+			<Action>ВыполнитьСкрипт</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>

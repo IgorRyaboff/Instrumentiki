@@ -865,54 +865,6 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Командная строка Windows (WScript.Shell)</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КоманднаяСтрока</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>11</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>17</index>
-		<row>
-			<c>
-				<c>
-					<f>11</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Администрирование</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
 							<v8:content>Объекты метаданных (список "Все функции")</v8:content>
 						</v8:item>
 					</tl>
@@ -937,7 +889,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>18</index>
+		<index>17</index>
 		<row>
 			<c>
 				<c>
@@ -985,7 +937,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>19</index>
+		<index>18</index>
 		<row>
 			<c>
 				<c>
@@ -1039,7 +991,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>20</index>
+		<index>19</index>
 		<row>
 			<c>
 				<c>
@@ -1087,7 +1039,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>21</index>
+		<index>20</index>
 		<row>
 			<c>
 				<c>
@@ -1135,7 +1087,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>22</index>
+		<index>21</index>
 		<row>
 			<c>
 				<c>
@@ -1183,7 +1135,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>23</index>
+		<index>22</index>
 		<row>
 			<c>
 				<c>
@@ -1219,6 +1171,54 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>СравнениеРеквизитовОбъектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администрирование</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Терминал ОС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТерминалОС</v8:content>
 						</v8:item>
 					</tl>
 				</c>

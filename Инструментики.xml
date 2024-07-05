@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
-	<ExternalDataProcessor uuid="23e037e3-5ece-4d06-ae99-757a70249112">
+	<ExternalDataProcessor uuid="96a4387e-0644-49d2-9d36-ee2db10c9503">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>c5cea6ba-0590-46d8-803b-c995f3578903</xr:ObjectId>
+				<xr:ObjectId>8297b0d9-a459-4420-84b4-beaea9cd5811</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.Инструментики" category="Object">
-				<xr:TypeId>874ef1cf-be23-4b81-a8a7-f9fb13605275</xr:TypeId>
-				<xr:ValueId>063afebd-bb09-4b02-b747-c635714c66e0</xr:ValueId>
+				<xr:TypeId>e7aa1432-24ca-4b92-bf33-9d8b704b90c5</xr:TypeId>
+				<xr:ValueId>ce74fb11-287d-4757-8968-ba2b0d0e58e9</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -432,7 +432,6 @@
 			<Form>ДинамическийСписок</Form>
 			<Form>ЗапускСеанса</Form>
 			<Form>ИсторияСеансов</Form>
-			<Form>КоманднаяСтрока</Form>
 			<Form>КонсольHTTP</Form>
 			<Form>КонсольЗапросов</Form>
 			<Form>КонсольЗапросов_ТаблицаЗначений</Form>
@@ -461,6 +460,7 @@
 			<Form>СравнениеПроизводительностиКода</Form>
 			<Form>СравнениеРеквизитовОбъектов</Form>
 			<Form>СтруктураХраненияБД</Form>
+			<Form>ТерминалОС</Form>
 			<Form>УдалениеНедопустимыхСимволовXMLВОбъекте</Form>
 			<Form>ФайловыйМенеджер</Form>
 			<Form>Шаблон_ОбщегоНазначения</Form>

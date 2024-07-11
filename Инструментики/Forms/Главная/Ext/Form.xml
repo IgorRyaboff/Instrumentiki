@@ -10,6 +10,16 @@
 	<CommandBarLocation>Top</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ФормаОткрытьGitHub" id="96">
+				<Type>CommandBarHyperlink</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОткрытьGitHub</CommandName>
+				<Picture>
+					<xr:Abs>Picture.png</xr:Abs>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаОткрытьGitHubРасширеннаяПодсказка" id="97"/>
+			</Button>
 			<Button name="ФормаОткрытьИнфостарт" id="62">
 				<Type>CommandBarHyperlink</Type>
 				<Representation>PictureAndText</Representation>
@@ -67,15 +77,6 @@
 					</Button>
 				</ChildItems>
 			</Popup>
-			<Button name="ФормаОткрытьБагтрекер" id="74">
-				<Type>CommandBarHyperlink</Type>
-				<CommandName>Form.Command.ОткрытьБагтрекер</CommandName>
-				<Picture>
-					<xr:Abs>Picture.png</xr:Abs>
-					<xr:LoadTransparent>false</xr:LoadTransparent>
-				</Picture>
-				<ExtendedTooltip name="ФормаОткрытьБагтрекерРасширеннаяПодсказка" id="75"/>
-			</Button>
 			<Button name="ФормаОчиститьВсеНастройкиИнструментиков" id="91">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОчиститьВсеНастройкиИнструментиков</CommandName>
@@ -411,22 +412,6 @@
 			</Picture>
 			<Action>ОткрытьФормуОбращения</Action>
 		</Command>
-		<Command name="ОткрытьБагтрекер" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Баг-трекер</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Публичный проект Redmine, через который можно отслеживать известные ошибки и поставленные разработчиком Инструментиков задачи и статус их выполнения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОткрытьБагтрекер</Action>
-			<Representation>TextPicture</Representation>
-		</Command>
 		<Command name="ОткрытьКаналСТестовымиВерсиями" id="2">
 			<Title>
 				<v8:item>
@@ -534,6 +519,15 @@
 				</v8:item>
 			</Title>
 			<Action>ОчиститьВсеНастройкиИнструментиков</Action>
+		</Command>
+		<Command name="ОткрытьGitHub" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GitHub</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьGitHub</Action>
 		</Command>
 	</Commands>
 </Form>

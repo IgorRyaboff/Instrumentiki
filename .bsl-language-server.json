@@ -11,7 +11,8 @@
 			"Typo": false,
 			"CommonModuleMissingAPI": false,
 			"DuplicateStringLiteral": false,
-			"NestedFunctionInParameters": false
+			"NestedFunctionInParameters": false,
+			"UnusedLocalVariable": false
 		}
 	}
 }

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
-	<ExternalDataProcessor uuid="23e037e3-5ece-4d06-ae99-757a70249112">
+	<ExternalDataProcessor uuid="e7a58064-9a60-4475-8880-4d56981c9017">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>c5cea6ba-0590-46d8-803b-c995f3578903</xr:ObjectId>
+				<xr:ObjectId>57abcc21-244e-4f7d-906f-aa438113f2de</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.Инструментики" category="Object">
-				<xr:TypeId>874ef1cf-be23-4b81-a8a7-f9fb13605275</xr:TypeId>
-				<xr:ValueId>063afebd-bb09-4b02-b747-c635714c66e0</xr:ValueId>
+				<xr:TypeId>2a5333ea-9e86-4a54-84e3-26ad9ab8574c</xr:TypeId>
+				<xr:ValueId>c561952d-55bb-4f64-b349-b11a9fc189c1</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -19,7 +19,7 @@
 					<v8:content>Инструментики</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>https://t.me/instrumentiki1C</Comment>
+			<Comment>https://github.com/IgorRyaboff/Instrumentiki</Comment>
 			<DefaultForm>ExternalDataProcessor.Инструментики.Form.Главная</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>

@@ -94,6 +94,7 @@
 				<ExtendedTooltip name="ТаблицаКонстантУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="Selection">ТаблицаКонстантВыбор</Event>
 				<Event name="BeforeAddRow">ТаблицаКонстантПередНачаломДобавления</Event>
 				<Event name="OnStartEdit">ТаблицаКонстантПриНачалеРедактирования</Event>
 			</Events>

@@ -206,6 +206,7 @@
 								<ExtendedTooltip name="СодержимоеНабораЗаписейУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="Selection">СодержимоеНабораЗаписейВыбор</Event>
 								<Event name="OnChange">СодержимоеНабораЗаписейПриИзменении</Event>
 							</Events>
 						</Table>

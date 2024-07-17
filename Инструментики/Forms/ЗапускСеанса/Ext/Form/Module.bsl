@@ -299,7 +299,10 @@
 			
 		КонецЕсли;
 		
+		// BSLLS:UsingObjectNotAvailableUnix-off
+		// Поддержка Linux и macOS не планируется
 		Shell = Новый COMОбъект("WScript.Shell");
+		// BSLLS:UsingObjectNotAvailableUnix-on
 		ИмяФайла = Shell.ExpandEnvironmentStrings("%appdata%") + "\1C\1CEStart\ibases.v8i";
 		
 		ФайлОС = Новый Файл(ИмяФайла);

@@ -41,7 +41,7 @@
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокОбъектов</DataPath>
-			<RowPictureDataPath>СписокОбъектов.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath/>
 			<SearchStringLocation>CommandBar</SearchStringLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>

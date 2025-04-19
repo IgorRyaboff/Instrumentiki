@@ -514,7 +514,6 @@
 			<Template>ГрупповаяОбработкаОбъектов</Template>
 			<Template>КонсольКода_Пример</Template>
 			<Template>КрасивыйРедакторКода</Template>
-			<Template>СписокИнструментов</Template>
 			<Template>СравнениеПроизводительностиКода_Пример</Template>
 		</ChildObjects>
 	</DataProcessor>

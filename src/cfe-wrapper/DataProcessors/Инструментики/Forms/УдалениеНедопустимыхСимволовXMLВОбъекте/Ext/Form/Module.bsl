@@ -124,7 +124,6 @@
 	КонецЕсли;
 КонецПроцедуры
 
-
 #КонецОбласти
 
 #КонецОбласти
@@ -809,7 +808,7 @@
 
 #Область Сохранение
 
-// BSLLS:TransferringParametersBetweenClientAndServer-on
+// BSLLS:TransferringParametersBetweenClientAndServer-off
 // Параметры процедуры возвратные
 
 // Процедура, определяющая параметры интеграции инструмента с функциями сохранения данных
@@ -827,6 +826,8 @@
 	//
 	
 КонецПроцедуры
+
+// BSLLS:TransferringParametersBetweenClientAndServer-on
 
 // Функция формирования пакета XDTO для сохранения в файл
 //

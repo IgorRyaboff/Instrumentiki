@@ -149,7 +149,7 @@
 							<ExtendedTooltip name="консолькодаТекстРасширеннаяПодсказка" id="21"/>
 						</TextDocumentField>
 						<HTMLDocumentField name="КрасивыйРедактор" id="91">
-							<DataPath>ЛокальныйПутьККрасивомуРедакторуКода</DataPath>
+							<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
 							<Visible>false</Visible>
 							<Title>
 								<v8:item>
@@ -159,10 +159,6 @@
 							</Title>
 							<ContextMenu name="КрасивыйРедакторКонтекстноеМеню" id="92"/>
 							<ExtendedTooltip name="КрасивыйРедакторРасширеннаяПодсказка" id="93"/>
-							<Events>
-								<Event name="DocumentComplete">консолькодаКрасивыйРедакторДокументСформирован</Event>
-								<Event name="OnClick">консолькодаКрасивыйРедакторПриНажатии</Event>
-							</Events>
 						</HTMLDocumentField>
 					</ChildItems>
 				</UsualGroup>
@@ -400,18 +396,7 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ИспользуетсяКрасивыйРедакторКода" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Используется красивый редактор кода</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="АдресДанныхАвтосохранения" id="10">
+		<Attribute name="__АдресДанныхАвтосохранения" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -426,11 +411,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ЛокальныйПутьККрасивомуРедакторуКода" id="11">
+		<Attribute name="УМ_КрасивыйРедакторКода_Путь" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Локальный путь к красивому редактору кода</v8:content>
+					<v8:content>У м красивый редактор кода путь</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -461,7 +446,7 @@
 				<xr:Ref>StdPicture.OpenFile</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СохрД_ОткрытьФайл</Action>
+			<Action>УМ_Сохранение_ОткрытьФайл</Action>
 		</Command>
 		<Command name="СохранитьТекущий" id="2">
 			<Title>
@@ -481,7 +466,7 @@
 				<xr:Ref>StdPicture.SaveFile</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СохрД_СохранитьФайл</Action>
+			<Action>УМ_Сохранение_СохранитьФайл</Action>
 		</Command>
 		<Command name="ВыполнитьКод" id="4">
 			<Title>

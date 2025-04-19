@@ -1,1 +1,3 @@
-ConfigDumpInfo.xml
+src/cfe-wrapper/ConfigDumpInfo.xml
+build/*
+!build/.gitkeep

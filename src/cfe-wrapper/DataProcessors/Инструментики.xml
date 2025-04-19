@@ -505,9 +505,7 @@
 			<Form>СтруктураХраненияБД</Form>
 			<Form>УдалениеНедопустимыхСимволовXMLВОбъекте</Form>
 			<Form>ФайловыйМенеджер</Form>
-			<Form>Шаблон_ОбщегоНазначения</Form>
 			<Form>Шаблон_ПустаяФорма</Form>
-			<Form>Шаблон_ССохранениемДанных</Form>
 			<Template>XSD_1</Template>
 			<Template>XSD_2</Template>
 			<Template>XSD_3</Template>

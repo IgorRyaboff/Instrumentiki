@@ -1,6 +1,6 @@
 ﻿
 // --------------------------------------------------------------------------------
-// Copyright (c) 2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
+// Copyright (c) 2024-2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
 // License: https://github.com/IgorRyaboff/Instrumentiki/blob/main/LICENSE
 // --------------------------------------------------------------------------------
 

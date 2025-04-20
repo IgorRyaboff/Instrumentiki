@@ -1,6 +1,6 @@
 ﻿
 // --------------------------------------------------------------------------------
-// Copyright (c) 2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
+// Copyright (c) 2024-2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
 // License: https://github.com/IgorRyaboff/Instrumentiki/blob/main/LICENSE
 // --------------------------------------------------------------------------------
 
@@ -194,7 +194,7 @@
 	Фабрика.ЗаписатьXML(Запись, УпакованныйОбъект);
 	
 	ТекстXML = Запись.Закрыть();
-	Возврат СтрШаблон("<!-- Файл сохранён из обработки ""Инструментики"" версии %1 (https://t.me/instrumentiki1C) -->
+	Возврат СтрШаблон("<!-- Файл сохранён из обработки ""Инструментики"" версии %1 (https://github.com/IgorRyaboff/Instrumentiki) -->
 	                  |
 					  |%2", Версия, ТекстXML);
 КонецФункции

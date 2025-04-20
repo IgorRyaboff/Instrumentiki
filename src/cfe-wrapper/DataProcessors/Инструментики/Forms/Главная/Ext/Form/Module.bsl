@@ -1,6 +1,6 @@
 ﻿
 // --------------------------------------------------------------------------------
-// Copyright (c) 2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
+// Copyright (c) 2024-2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
 // License: https://github.com/IgorRyaboff/Instrumentiki/blob/main/LICENSE
 // --------------------------------------------------------------------------------
 
@@ -281,15 +281,6 @@
 	КонецЦикла;
 	
 	Возврат 0;
-КонецФункции
-
-// Получить ссылку на официальный Telegram-канал обработки
-//
-// Возвращаемое значение:
-//  Строка -
-&НаКлиентеНаСервереБезКонтекста
-Функция СсылкаНаКаналTelegram()
-	Возврат "https://t.me/instrumentiki1C";
 КонецФункции
 
 // Заполнение списка инструментов

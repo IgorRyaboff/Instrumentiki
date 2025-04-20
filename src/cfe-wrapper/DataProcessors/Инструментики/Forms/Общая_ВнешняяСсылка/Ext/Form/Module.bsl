@@ -1,6 +1,6 @@
 ﻿
 // --------------------------------------------------------------------------------
-// Copyright (c) 2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
+// Copyright (c) 2024-2025 Igor Ryabov (https://github.com/IgorRyaboff/Instrumentiki)
 // License: https://github.com/IgorRyaboff/Instrumentiki/blob/main/LICENSE
 // --------------------------------------------------------------------------------
 
@@ -12,11 +12,7 @@
 
 &НаСервере
 Процедура ПриСозданииНаСервере(Отказ, СтандартнаяОбработка)
-	Если Параметры.Свойство("Ссылка") Тогда
-		Ссылка = Параметры.Ссылка;
-	Иначе
-		Ссылка = "https://t.me/instrumentiki1C";
-	КонецЕсли;
+	Ссылка = Параметры.Ссылка;
 КонецПроцедуры
 
 #КонецОбласти

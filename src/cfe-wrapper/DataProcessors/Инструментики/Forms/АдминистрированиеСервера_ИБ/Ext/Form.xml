@@ -143,6 +143,13 @@
 							<ContextMenu name="РезервированиеРабочихПроцессовКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="РезервированиеРабочихПроцессовРасширеннаяПодсказка" id="24"/>
 						</CheckBoxField>
+						<CheckBoxField name="ЗапретитьЛокальноеРаспознаваниеРечи" id="95">
+							<DataPath>ЗапретитьЛокальноеРаспознаваниеРечи</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗапретитьЛокальноеРаспознаваниеРечиКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ЗапретитьЛокальноеРаспознаваниеРечиРасширеннаяПодсказка" id="97"/>
+						</CheckBoxField>
 						<CheckBoxField name="ОбязательноеВнешнееУправление" id="19">
 							<DataPath>ОбязательноеВнешнееУправление</DataPath>
 							<TitleLocation>Right</TitleLocation>
@@ -175,6 +182,36 @@
 									<DataPath>ПрофильБезопасностиБезопасногоРежима</DataPath>
 									<ContextMenu name="ПрофильБезопасностиБезопасногоРежимаКонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="ПрофильБезопасностиБезопасногоРежимаРасширеннаяПодсказка" id="35"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПриОтсутствииАктивныхПользователей" id="98">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При отсутствии активных пользователей</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаПриОтсутствииАктивныхПользователейРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<InputField name="ЗадержкаВыгрузкиКонфигурацииРабочимПроцессом" id="100">
+									<DataPath>ЗадержкаВыгрузкиКонфигурацииРабочимПроцессом</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадержкаВыгрузкиКонфигурацииРабочимПроцессомКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ЗадержкаВыгрузкиКонфигурацииРабочимПроцессомРасширеннаяПодсказка" id="102"/>
+								</InputField>
+								<InputField name="МинимальныйПериодЗапускаРегламентныхЗаданий" id="103">
+									<DataPath>МинимальныйПериодЗапускаРегламентныхЗаданий</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МинимальныйПериодЗапускаРегламентныхЗаданийКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="МинимальныйПериодЗапускаРегламентныхЗаданийРасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="МаксимальныйСдвигЗапускаРегламентныхЗаданий" id="106">
+									<DataPath>МаксимальныйСдвигЗапускаРегламентныхЗаданий</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МаксимальныйСдвигЗапускаРегламентныхЗаданийКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="МаксимальныйСдвигЗапускаРегламентныхЗаданийРасширеннаяПодсказка" id="108"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -817,6 +854,65 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапретитьЛокальноеРаспознаваниеРечи" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запретить локальное распознавание речи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадержкаВыгрузкиКонфигурацииРабочимПроцессом" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задержка выгрузки конфигурации рабочим процессом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>7</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МинимальныйПериодЗапускаРегламентныхЗаданий" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальный период запуска регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>7</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальныйСдвигЗапускаРегламентныхЗаданий" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальный сдвиг запуска регламентных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>7</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

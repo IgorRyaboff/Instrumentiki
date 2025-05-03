@@ -111,8 +111,6 @@
 						<Table name="Дерево" id="7">
 							<Representation>Tree</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
-							<ReadOnly>true</ReadOnly>
-							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<Header>false</Header>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -152,9 +150,14 @@
 								<ContextMenu name="ДеревоУправлениеПоискомКонтекстноеМеню" id="18"/>
 								<ExtendedTooltip name="ДеревоУправлениеПоискомРасширеннаяПодсказка" id="19"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ДеревоПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ДеревоПередУдалением</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ДеревоПредставление" id="46">
 									<DataPath>Дерево.Представление</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ДеревоПредставлениеКонтекстноеМеню" id="47"/>
@@ -174,7 +177,15 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Items.Дерево.CurrentData.ПараметрыФайла</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ДеревоПараметрыФайлаКонтекстноеМеню" id="123"/>
+							<ContextMenu name="ДеревоПараметрыФайлаКонтекстноеМеню" id="123">
+								<ChildItems>
+									<Button name="ДеревоПараметрыФайлаКонтекстноеМенюКоманда1" id="150">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Команда1</CommandName>
+										<ExtendedTooltip name="ДеревоПараметрыФайлаКонтекстноеМенюКоманда1РасширеннаяПодсказка" id="151"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ДеревоПараметрыФайлаКоманднаяПанель" id="124"/>
 							<ExtendedTooltip name="ДеревоПараметрыФайлаРасширеннаяПодсказка" id="125"/>
 							<SearchStringAddition name="ДеревоПараметрыФайлаСтрокаПоиска" id="126">
@@ -620,6 +631,9 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьОперацию</Action>
+		</Command>
+		<Command name="Команда1" id="4">
+			<Action>Команда1</Action>
 		</Command>
 	</Commands>
 </Form>

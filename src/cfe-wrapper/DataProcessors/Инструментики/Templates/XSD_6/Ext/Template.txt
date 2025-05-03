@@ -163,4 +163,18 @@ License: https://github.com/IgorRyaboff/Instrumentiki/blob/main/LICENSE
 			<xs:element name="Объект" type="xs:base64Binary"/>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="КонсольWebSocket_Данные">
+		<xs:sequence>
+			<xs:element name="АдресСервера" type="tns:НепустаяСтрока"/>
+			<xs:element name="Таймаут" type="xs:positiveInteger"/>
+			<xs:element name="Логин" type="xs:string"/>
+			<xs:element name="Заголовки" type="tns:КонсольWebSocket_Заголовок" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="КонсольWebSocket_Заголовок">
+		<xs:sequence>
+			<xs:element name="Имя" type="tns:НепустаяСтрока"/>
+			<xs:element name="Значение" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>

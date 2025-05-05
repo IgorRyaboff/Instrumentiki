@@ -476,6 +476,7 @@
 			<Form>ИсторияСеансов</Form>
 			<Form>КоманднаяСтрока</Form>
 			<Form>КонсольHTTP</Form>
+			<Form>КонсольWebSocket</Form>
 			<Form>КонсольЗапросов</Form>
 			<Form>КонсольЗапросов_ТаблицаЗначений</Form>
 			<Form>КонсольКода</Form>
@@ -505,18 +506,14 @@
 			<Form>СтруктураХраненияБД</Form>
 			<Form>УдалениеНедопустимыхСимволовXMLВОбъекте</Form>
 			<Form>ФайловыйМенеджер</Form>
-			<Form>Шаблон_ОбщегоНазначения</Form>
-			<Form>Шаблон_ПустаяФорма</Form>
-			<Form>Шаблон_ССохранениемДанных</Form>
 			<Template>XSD_1</Template>
 			<Template>XSD_2</Template>
 			<Template>XSD_3</Template>
 			<Template>XSD_4</Template>
 			<Template>XSD_5</Template>
-			<Template>ГрупповаяОбработкаОбъектов</Template>
+			<Template>XSD_6</Template>
 			<Template>КонсольКода_Пример</Template>
 			<Template>КрасивыйРедакторКода</Template>
-			<Template>СписокИнструментов</Template>
 			<Template>СравнениеПроизводительностиКода_Пример</Template>
 		</ChildObjects>
 	</DataProcessor>

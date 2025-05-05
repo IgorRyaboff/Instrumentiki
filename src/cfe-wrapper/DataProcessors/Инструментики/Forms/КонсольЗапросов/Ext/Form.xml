@@ -154,7 +154,7 @@
 							</Events>
 						</TextDocumentField>
 						<HTMLDocumentField name="ТекстЗапросаКрасивыйРедактор" id="165">
-							<DataPath>ЛокальныйПутьККрасивомуРедакторуКода</DataPath>
+							<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
 							<Visible>false</Visible>
 							<TitleLocation>None</TitleLocation>
 							<ToolTip>
@@ -509,7 +509,7 @@
 											<ExtendedTooltip name="ПередВыполнениемПростойРедакторРасширеннаяПодсказка" id="156"/>
 										</TextDocumentField>
 										<HTMLDocumentField name="ПередВыполнениемКрасивыйРедактор" id="168">
-											<DataPath>ЛокальныйПутьККрасивомуРедакторуКода</DataPath>
+											<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
 											<Visible>false</Visible>
 											<TitleLocation>None</TitleLocation>
 											<ToolTip>
@@ -558,7 +558,7 @@
 											<ExtendedTooltip name="ПриВыборкеПростойРедакторРасширеннаяПодсказка" id="159"/>
 										</TextDocumentField>
 										<HTMLDocumentField name="ПриВыборкеКрасивыйРедактор" id="171">
-											<DataPath>ЛокальныйПутьККрасивомуРедакторуКода</DataPath>
+											<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
 											<Visible>false</Visible>
 											<TitleLocation>None</TitleLocation>
 											<ToolTip>
@@ -607,7 +607,7 @@
 											<ExtendedTooltip name="ПослеВыполненияПростойРедакторРасширеннаяПодсказка" id="162"/>
 										</TextDocumentField>
 										<HTMLDocumentField name="ПослеВыполненияКрасивыйРедактор" id="174">
-											<DataPath>ЛокальныйПутьККрасивомуРедакторуКода</DataPath>
+											<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
 											<Visible>false</Visible>
 											<TitleLocation>None</TitleLocation>
 											<ToolTip>
@@ -1245,37 +1245,11 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ЛокальныйПутьККрасивомуРедакторуКода" id="9">
+		<Attribute name="УМ_КрасивыйРедакторКода_Путь" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Локальный путь к красивому редактору кода</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ИспользуетсяКрасивыйРедакторКода" id="14">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Используется красивый редактор кода</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="АдресДанныхАвтосохранения" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес данных автосохранения</v8:content>
+					<v8:content>У м красивый редактор кода путь</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -1594,7 +1568,7 @@
 				<xr:Ref>StdPicture.OpenFile</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СохранениеДанных_ОткрытьФайл</Action>
+			<Action>УМ_Сохранение_ОткрытьФайл</Action>
 		</Command>
 		<Command name="СохранитьФайл" id="5">
 			<Title>
@@ -1614,7 +1588,7 @@
 				<xr:Ref>StdPicture.SaveFile</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>СохранениеДанных_СохранитьФайл</Action>
+			<Action>УМ_Сохранение_СохранитьФайл</Action>
 		</Command>
 		<Command name="СгенерироватьТекстДляКонфигуратора" id="6">
 			<Title>

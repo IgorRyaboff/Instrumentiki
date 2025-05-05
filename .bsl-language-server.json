@@ -12,7 +12,12 @@
 			"CommonModuleMissingAPI": false,
 			"DuplicateStringLiteral": false,
 			"NestedFunctionInParameters": false,
-			"UnusedLocalVariable": false
+			"UnusedLocalVariable": false,
+			"RedundantAccessToObject": {
+				"checkFormModule": false
+			},
+			"MissingReturnedValueDescription": false,
+			"MissingParameterDescription": false
 		}
 	}
 }

@@ -77,6 +77,22 @@
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
+			<ButtonGroup name="ФормаГруппаРезультатВыполнения" id="176">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Результат выполнения</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппаРезультатВыполненияРасширеннаяПодсказка" id="177"/>
+				<ChildItems>
+					<Button name="ФормаВернутьсяКВыборуОбъектовИзРезультата" id="178">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВернутьсяКВыборуОбъектов</CommandName>
+						<ExtendedTooltip name="ФормаВернутьсяКВыборуОбъектовИзРезультатаРасширеннаяПодсказка" id="179"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -446,68 +462,95 @@
 											<v8:content>Программная обработка</v8:content>
 										</v8:item>
 									</Title>
-									<Group>AlwaysHorizontal</Group>
 									<ExtendedTooltip name="СтраницаПрограммнаяОбработкаРасширеннаяПодсказка" id="113"/>
 									<ChildItems>
-										<TextDocumentField name="АлгоритмОбработки" id="114">
-											<DataPath>АлгоритмОбработки</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<ContextMenu name="АлгоритмОбработкиКонтекстноеМеню" id="115"/>
-											<ExtendedTooltip name="АлгоритмОбработкиРасширеннаяПодсказка" id="116"/>
-										</TextDocumentField>
-										<Table name="СписокРеквизитовДляАлгоритма" id="117">
-											<Representation>List</Representation>
-											<CommandBarLocation>None</CommandBarLocation>
-											<ReadOnly>true</ReadOnly>
-											<ChangeRowSet>false</ChangeRowSet>
-											<ChangeRowOrder>false</ChangeRowOrder>
-											<Header>false</Header>
-											<UseAlternationRowColor>true</UseAlternationRowColor>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
-											<DataPath>СписокРеквизитов</DataPath>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="СписокРеквизитовДляАлгоритмаКонтекстноеМеню" id="118"/>
-											<AutoCommandBar name="СписокРеквизитовДляАлгоритмаКоманднаяПанель" id="119"/>
-											<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаРасширеннаяПодсказка" id="120"/>
-											<SearchStringAddition name="СписокРеквизитовДляАлгоритмаСтрокаПоиска" id="121">
-												<AdditionSource>
-													<Item>СписокРеквизитовДляАлгоритма</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокРеквизитовДляАлгоритмаСтрокаПоискаКонтекстноеМеню" id="122"/>
-												<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаСтрокаПоискаРасширеннаяПодсказка" id="123"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="СписокРеквизитовДляАлгоритмаСостояниеПросмотра" id="124">
-												<AdditionSource>
-													<Item>СписокРеквизитовДляАлгоритма</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокРеквизитовДляАлгоритмаСостояниеПросмотраКонтекстноеМеню" id="125"/>
-												<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаСостояниеПросмотраРасширеннаяПодсказка" id="126"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="СписокРеквизитовДляАлгоритмаУправлениеПоиском" id="127">
-												<AdditionSource>
-													<Item>СписокРеквизитовДляАлгоритма</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокРеквизитовДляАлгоритмаУправлениеПоискомКонтекстноеМеню" id="128"/>
-												<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаУправлениеПоискомРасширеннаяПодсказка" id="129"/>
-											</SearchControlAddition>
-											<Events>
-												<Event name="DragStart">СписокРеквизитовДляАлгоритмаНачалоПеретаскивания</Event>
-											</Events>
+										<UsualGroup name="ГруппаАлгоритм" id="149">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Алгоритм</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаАлгоритмРасширеннаяПодсказка" id="150"/>
 											<ChildItems>
-												<InputField name="СписокРеквизитовДляАлгоритмаИмя" id="130">
-													<DataPath>СписокРеквизитов.Имя</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="СписокРеквизитовДляАлгоритмаИмяКонтекстноеМеню" id="131"/>
-													<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаИмяРасширеннаяПодсказка" id="132"/>
-												</InputField>
+												<TextDocumentField name="АлгоритмОбработки" id="114">
+													<DataPath>АлгоритмОбработки</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="АлгоритмОбработкиКонтекстноеМеню" id="115"/>
+													<ExtendedTooltip name="АлгоритмОбработкиРасширеннаяПодсказка" id="116"/>
+												</TextDocumentField>
+												<Table name="СписокРеквизитовДляАлгоритма" id="117">
+													<Representation>List</Representation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ReadOnly>true</ReadOnly>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<Header>false</Header>
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>СписокРеквизитов</DataPath>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="СписокРеквизитовДляАлгоритмаКонтекстноеМеню" id="118"/>
+													<AutoCommandBar name="СписокРеквизитовДляАлгоритмаКоманднаяПанель" id="119"/>
+													<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаРасширеннаяПодсказка" id="120"/>
+													<SearchStringAddition name="СписокРеквизитовДляАлгоритмаСтрокаПоиска" id="121">
+														<AdditionSource>
+															<Item>СписокРеквизитовДляАлгоритма</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокРеквизитовДляАлгоритмаСтрокаПоискаКонтекстноеМеню" id="122"/>
+														<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаСтрокаПоискаРасширеннаяПодсказка" id="123"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="СписокРеквизитовДляАлгоритмаСостояниеПросмотра" id="124">
+														<AdditionSource>
+															<Item>СписокРеквизитовДляАлгоритма</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокРеквизитовДляАлгоритмаСостояниеПросмотраКонтекстноеМеню" id="125"/>
+														<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаСостояниеПросмотраРасширеннаяПодсказка" id="126"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="СписокРеквизитовДляАлгоритмаУправлениеПоиском" id="127">
+														<AdditionSource>
+															<Item>СписокРеквизитовДляАлгоритма</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="СписокРеквизитовДляАлгоритмаУправлениеПоискомКонтекстноеМеню" id="128"/>
+														<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаУправлениеПоискомРасширеннаяПодсказка" id="129"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="DragStart">СписокРеквизитовДляАлгоритмаНачалоПеретаскивания</Event>
+													</Events>
+													<ChildItems>
+														<InputField name="СписокРеквизитовДляАлгоритмаИмя" id="130">
+															<DataPath>СписокРеквизитов.Имя</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="СписокРеквизитовДляАлгоритмаИмяКонтекстноеМеню" id="131"/>
+															<ExtendedTooltip name="СписокРеквизитовДляАлгоритмаИмяРасширеннаяПодсказка" id="132"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
-										</Table>
+										</UsualGroup>
+										<CheckBoxField name="ЗаписьВыполняетсяАлгоритмом" id="146">
+											<DataPath>ЗаписьВыполняетсяАлгоритмом</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указывает, что запись объекта выполняется явно в тексте алгоритма на вкладке "Программная обработка"</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗаписьВыполняетсяАлгоритмомКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ЗаписьВыполняетсяАлгоритмомРасширеннаяПодсказка" id="148"/>
+										</CheckBoxField>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаПараметрыЗаписи" id="135">
@@ -522,6 +565,13 @@
 										<CheckBoxField name="ОтключитьБизнесЛогикуПриЗаписи" id="137">
 											<DataPath>ОтключитьБизнесЛогикуПриЗаписи</DataPath>
 											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Установить признак "ОбменДанными.Загрузка" перед записью объекта. Это отключит логику обработчиков "Перед записью" и "При записи" объекта</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ОтключитьБизнесЛогикуПриЗаписиКонтекстноеМеню" id="138"/>
 											<ExtendedTooltip name="ОтключитьБизнесЛогикуПриЗаписиРасширеннаяПодсказка" id="139"/>
@@ -529,6 +579,13 @@
 										<CheckBoxField name="ВыполнятьВТранзакции" id="140">
 											<DataPath>ВыполнятьВТранзакции</DataPath>
 											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обработать все объекты в одной транзакции. Если данная опция включена, ошибка при записи одного объекта принудительно прервет процесс (т.е. флажок "Прерывать по ошибке" не действует)</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ВыполнятьВТранзакцииКонтекстноеМеню" id="141"/>
 											<ExtendedTooltip name="ВыполнятьВТранзакцииРасширеннаяПодсказка" id="142"/>
@@ -536,16 +593,16 @@
 										<CheckBoxField name="ПрерыватьПриОшибке" id="143">
 											<DataPath>ПрерыватьПриОшибке</DataPath>
 											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если произошла ошибка при записи одного объекта, обработка оставшихся объектов выполняться не будет</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ПрерыватьПриОшибкеКонтекстноеМеню" id="144"/>
 											<ExtendedTooltip name="ПрерыватьПриОшибкеРасширеннаяПодсказка" id="145"/>
-										</CheckBoxField>
-										<CheckBoxField name="ЗаписьВыполняетсяАлгоритмом" id="146">
-											<DataPath>ЗаписьВыполняетсяАлгоритмом</DataPath>
-											<TitleLocation>Right</TitleLocation>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ЗаписьВыполняетсяАлгоритмомКонтекстноеМеню" id="147"/>
-											<ExtendedTooltip name="ЗаписьВыполняетсяАлгоритмомРасширеннаяПодсказка" id="148"/>
 										</CheckBoxField>
 									</ChildItems>
 								</Page>
@@ -561,6 +618,66 @@
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="СтраницаЭтапРезультатВыполненияРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="РезультатОбработки" id="151">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>РезультатОбработки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РезультатОбработкиКонтекстноеМеню" id="152"/>
+							<AutoCommandBar name="РезультатОбработкиКоманднаяПанель" id="153"/>
+							<ExtendedTooltip name="РезультатОбработкиРасширеннаяПодсказка" id="154"/>
+							<SearchStringAddition name="РезультатОбработкиСтрокаПоиска" id="155">
+								<AdditionSource>
+									<Item>РезультатОбработки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатОбработкиСтрокаПоискаКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="РезультатОбработкиСтрокаПоискаРасширеннаяПодсказка" id="157"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РезультатОбработкиСостояниеПросмотра" id="158">
+								<AdditionSource>
+									<Item>РезультатОбработки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатОбработкиСостояниеПросмотраКонтекстноеМеню" id="159"/>
+								<ExtendedTooltip name="РезультатОбработкиСостояниеПросмотраРасширеннаяПодсказка" id="160"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РезультатОбработкиУправлениеПоиском" id="161">
+								<AdditionSource>
+									<Item>РезультатОбработки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатОбработкиУправлениеПоискомКонтекстноеМеню" id="162"/>
+								<ExtendedTooltip name="РезультатОбработкиУправлениеПоискомРасширеннаяПодсказка" id="163"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">РезультатОбработкиВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РезультатОбработкиОбъект" id="164">
+									<DataPath>РезультатОбработки.Объект</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатОбработкиОбъектКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="РезультатОбработкиОбъектРасширеннаяПодсказка" id="166"/>
+								</InputField>
+								<InputField name="РезультатОбработкиПредставлениеРезультата" id="173">
+									<DataPath>РезультатОбработки.ПредставлениеРезультата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатОбработкиПредставлениеРезультатаКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="РезультатОбработкиПредставлениеРезультатаРасширеннаяПодсказка" id="175"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
 				</Page>
 			</ChildItems>
 		</Pages>
@@ -789,6 +906,63 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="РезультатОбработки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Объект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Обработан" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнформацияОбОшибке" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об ошибке</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ПредставлениеРезультата" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>

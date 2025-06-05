@@ -127,6 +127,17 @@
 											</Title>
 											<ExtendedTooltip name="ЗаполнитьИзНабораДанныхСКДРасширеннаяПодсказка" id="190"/>
 										</Button>
+										<Button name="ЗаполнитьИзВыгрузкиБСП" id="276">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ЗаполнитьИзВыгрузкиБСП</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Из результата функции ОбщегоНазначения.ЗапросВСтрокуXML</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ЗаполнитьИзВыгрузкиБСПРасширеннаяПодсказка" id="277"/>
+										</Button>
 									</ChildItems>
 								</Popup>
 							</ChildItems>
@@ -1830,6 +1841,15 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтформатироватьТекстЗапроса</Action>
+		</Command>
+		<Command name="ЗаполнитьИзВыгрузкиБСП" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из выгрузки БСП</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗаполнитьИзВыгрузкиБСП</Action>
 		</Command>
 	</Commands>
 </Form>

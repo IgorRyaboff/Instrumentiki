@@ -476,6 +476,7 @@
 			<Form>ИсторияСеансов</Form>
 			<Form>КоманднаяСтрока</Form>
 			<Form>КонсольHTTP</Form>
+			<Form>КонсольWebSocket</Form>
 			<Form>КонсольВебСервисов</Form>
 			<Form>КонсольЗапросов</Form>
 			<Form>КонсольЗапросов_ТаблицаЗначений</Form>
@@ -500,6 +501,7 @@
 			<Form>РедакторОбъектов_ФормаВыбора</Form>
 			<Form>РедакторПараметровСеанса</Form>
 			<Form>РедакторРегистровСведений</Form>
+			<Form>РедакторРегистровСведений_ВыборРежимаЗамещения</Form>
 			<Form>РедакторУниверсальныхПакетов</Form>
 			<Form>СравнениеПроизводительностиКода</Form>
 			<Form>СравнениеРеквизитовОбъектов</Form>
@@ -511,6 +513,7 @@
 			<Template>XSD_3</Template>
 			<Template>XSD_4</Template>
 			<Template>XSD_5</Template>
+			<Template>XSD_6</Template>
 			<Template>КонсольКода_Пример</Template>
 			<Template>КрасивыйРедакторКода</Template>
 			<Template>СравнениеПроизводительностиКода_Пример</Template>

@@ -78,7 +78,7 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="45"/>
 			<ChildItems>
-				<CheckBoxField name="консолькодаНаКлиенте" id="1">
+				<CheckBoxField name="НаКлиенте" id="1">
 					<DataPath>НаКлиенте</DataPath>
 					<CheckBoxType>Tumbler</CheckBoxType>
 					<EditFormat>
@@ -87,15 +87,15 @@
 							<v8:content>БЛ='На сервере'; БИ='На клиенте'</v8:content>
 						</v8:item>
 					</EditFormat>
-					<ContextMenu name="консолькодаНаКлиентеКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="консолькодаНаКлиентеРасширеннаяПодсказка" id="3"/>
+					<ContextMenu name="НаКлиентеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаКлиентеРасширеннаяПодсказка" id="3"/>
 				</CheckBoxField>
-				<CheckBoxField name="консолькодаПривилегированныйРежим" id="4">
-					<DataPath>консолькодаПривилегированныйРежим</DataPath>
+				<CheckBoxField name="ПривилегированныйРежим" id="4">
+					<DataPath>ПривилегированныйРежим</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>CheckBox</CheckBoxType>
-					<ContextMenu name="консолькодаПривилегированныйРежимКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="консолькодаПривилегированныйРежимРасширеннаяПодсказка" id="6"/>
+					<ContextMenu name="ПривилегированныйРежимКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПривилегированныйРежимРасширеннаяПодсказка" id="6"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
@@ -137,16 +137,16 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРедакторыКодаРасширеннаяПодсказка" id="105"/>
 					<ChildItems>
-						<TextDocumentField name="консолькодаТекст" id="19">
-							<DataPath>консолькодаТекст</DataPath>
+						<TextDocumentField name="Текст" id="19">
+							<DataPath>Текст</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Программный код</v8:content>
 								</v8:item>
 							</Title>
-							<ContextMenu name="консолькодаТекстКонтекстноеМеню" id="20"/>
-							<ExtendedTooltip name="консолькодаТекстРасширеннаяПодсказка" id="21"/>
+							<ContextMenu name="ТекстКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="21"/>
 						</TextDocumentField>
 						<HTMLDocumentField name="КрасивыйРедактор" id="91">
 							<DataPath>УМ_КрасивыйРедакторКода_Путь</DataPath>
@@ -188,15 +188,15 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="77"/>
 							<ChildItems>
-								<LabelDecoration name="ОбменДанными" id="78">
+								<LabelDecoration name="НадписьОбменДанными" id="78">
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Обмен данными</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ОбменДаннымиКонтекстноеМеню" id="79"/>
-									<ExtendedTooltip name="ОбменДаннымиРасширеннаяПодсказка" id="80"/>
+									<ContextMenu name="НадписьОбменДаннымиКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="НадписьОбменДаннымиРасширеннаяПодсказка" id="80"/>
 								</LabelDecoration>
 								<Button name="ФормаЗагрузитьПример" id="83">
 									<Type>Hyperlink</Type>
@@ -205,12 +205,12 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="консолькодаОбменДанными" id="22">
+						<Table name="ОбменДанными" id="22">
 							<Representation>List</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<DataPath>консолькодаОбменДанными</DataPath>
+							<DataPath>ОбменДанными</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -218,63 +218,63 @@
 								</v8:item>
 							</Title>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="консолькодаОбменДаннымиКонтекстноеМеню" id="23"/>
-							<AutoCommandBar name="консолькодаОбменДаннымиКоманднаяПанель" id="24"/>
-							<ExtendedTooltip name="консолькодаОбменДаннымиРасширеннаяПодсказка" id="25"/>
-							<SearchStringAddition name="консолькодаОбменДаннымиСтрокаПоиска" id="26">
+							<ContextMenu name="ОбменДаннымиКонтекстноеМеню" id="23"/>
+							<AutoCommandBar name="ОбменДаннымиКоманднаяПанель" id="24"/>
+							<ExtendedTooltip name="ОбменДаннымиРасширеннаяПодсказка" id="25"/>
+							<SearchStringAddition name="ОбменДаннымиСтрокаПоиска" id="26">
 								<AdditionSource>
-									<Item>консолькодаОбменДанными</Item>
+									<Item>ОбменДанными</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="консолькодаОбменДаннымиСтрокаПоискаКонтекстноеМеню" id="27"/>
-								<ExtendedTooltip name="консолькодаОбменДаннымиСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+								<ContextMenu name="ОбменДаннымиСтрокаПоискаКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ОбменДаннымиСтрокаПоискаРасширеннаяПодсказка" id="28"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="консолькодаОбменДаннымиСостояниеПросмотра" id="29">
+							<ViewStatusAddition name="ОбменДаннымиСостояниеПросмотра" id="29">
 								<AdditionSource>
-									<Item>консолькодаОбменДанными</Item>
+									<Item>ОбменДанными</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="консолькодаОбменДаннымиСостояниеПросмотраКонтекстноеМеню" id="30"/>
-								<ExtendedTooltip name="консолькодаОбменДаннымиСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+								<ContextMenu name="ОбменДаннымиСостояниеПросмотраКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ОбменДаннымиСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="консолькодаОбменДаннымиУправлениеПоиском" id="32">
+							<SearchControlAddition name="ОбменДаннымиУправлениеПоиском" id="32">
 								<AdditionSource>
-									<Item>консолькодаОбменДанными</Item>
+									<Item>ОбменДанными</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="консолькодаОбменДаннымиУправлениеПоискомКонтекстноеМеню" id="33"/>
-								<ExtendedTooltip name="консолькодаОбменДаннымиУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+								<ContextMenu name="ОбменДаннымиУправлениеПоискомКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ОбменДаннымиУправлениеПоискомРасширеннаяПодсказка" id="34"/>
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">консолькодаОбменДаннымиВыбор</Event>
-								<Event name="DragStart">консолькодаОбменДаннымиНачалоПеретаскивания</Event>
+								<Event name="DragStart">ОбменДаннымиНачалоПеретаскивания</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="консолькодаОбменДаннымиКлюч" id="35">
-									<DataPath>консолькодаОбменДанными.Ключ</DataPath>
+								<InputField name="ОбменДаннымиКлюч" id="35">
+									<DataPath>ОбменДанными.Ключ</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="консолькодаОбменДаннымиКлючКонтекстноеМеню" id="36"/>
-									<ExtendedTooltip name="консолькодаОбменДаннымиКлючРасширеннаяПодсказка" id="37"/>
+									<ContextMenu name="ОбменДаннымиКлючКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ОбменДаннымиКлючРасширеннаяПодсказка" id="37"/>
 								</InputField>
-								<InputField name="консолькодаОбменДаннымиЗначение" id="38">
-									<DataPath>консолькодаОбменДанными.Значение</DataPath>
+								<InputField name="ОбменДаннымиЗначение" id="38">
+									<DataPath>ОбменДанными.Значение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
-									<ContextMenu name="консолькодаОбменДаннымиЗначениеКонтекстноеМеню" id="39">
+									<ContextMenu name="ОбменДаннымиЗначениеКонтекстноеМеню" id="39">
 										<ChildItems>
-											<Button name="консолькодаОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзНавигационнойСсылки" id="60">
+											<Button name="ОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзНавигационнойСсылки" id="60">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.УстановитьЗначениеВОбменеДаннымиИзНавигационнойСсылки</CommandName>
-												<ExtendedTooltip name="консолькодаОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзНавигационнойСсылкиРасширеннаяПодсказка" id="61"/>
+												<ExtendedTooltip name="ОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзНавигационнойСсылкиРасширеннаяПодсказка" id="61"/>
 											</Button>
-											<Button name="консолькодаОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзОткрытыхОкон" id="110">
+											<Button name="ОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзОткрытыхОкон" id="110">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.УстановитьЗначениеВОбменеДаннымиИзОткрытыхОкон</CommandName>
-												<ExtendedTooltip name="консолькодаОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзОткрытыхОконРасширеннаяПодсказка" id="111"/>
+												<ExtendedTooltip name="ОбменДаннымиЗначениеКонтекстноеМенюУстановитьЗначениеВОбменеДаннымиИзОткрытыхОконРасширеннаяПодсказка" id="111"/>
 											</Button>
 										</ChildItems>
 									</ContextMenu>
-									<ExtendedTooltip name="консолькодаОбменДаннымиЗначениеРасширеннаяПодсказка" id="40"/>
+									<ExtendedTooltip name="ОбменДаннымиЗначениеРасширеннаяПодсказка" id="40"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -296,7 +296,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="консолькодаОбменДанными" id="2">
+		<Attribute name="ОбменДанными" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -346,7 +346,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="консолькодаТекст" id="4">
+		<Attribute name="Текст" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -362,7 +362,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="консолькодаПривилегированныйРежим" id="5">
+		<Attribute name="ПривилегированныйРежим" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -371,29 +371,6 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="консолькодаСписокМетаданныхСправочники" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Список метаданных справочники</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-			<Settings xsi:type="v8:TypeDescription"/>
-		</Attribute>
-		<Attribute name="консолькодаСписокМетаданныхДокументы" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Консолькода список метаданных документы</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="УМ_КрасивыйРедакторКода_Путь" id="11">

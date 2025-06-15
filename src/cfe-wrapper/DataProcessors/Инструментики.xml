@@ -477,6 +477,7 @@
 			<Form>КоманднаяСтрока</Form>
 			<Form>КонсольHTTP</Form>
 			<Form>КонсольWebSocket</Form>
+			<Form>КонсольВебСервисов</Form>
 			<Form>КонсольЗапросов</Form>
 			<Form>КонсольЗапросов_ТаблицаЗначений</Form>
 			<Form>КонсольКода</Form>

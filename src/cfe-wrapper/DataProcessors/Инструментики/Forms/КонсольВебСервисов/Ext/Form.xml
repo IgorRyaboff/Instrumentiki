@@ -179,10 +179,10 @@
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ДеревоПараметрыФайлаКонтекстноеМеню" id="123">
 								<ChildItems>
-									<Button name="ДеревоПараметрыФайлаКонтекстноеМенюКоманда1" id="150">
+									<Button name="ДеревоПараметрыФайлаКонтекстноеМенюЗаполнитьЗначениеПараметраПоУмолчанию" id="150">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.Команда1</CommandName>
-										<ExtendedTooltip name="ДеревоПараметрыФайлаКонтекстноеМенюКоманда1РасширеннаяПодсказка" id="151"/>
+										<CommandName>Form.Command.ЗаполнитьЗначениеПараметраПоУмолчанию</CommandName>
+										<ExtendedTooltip name="ДеревоПараметрыФайлаКонтекстноеМенюЗаполнитьЗначениеПараметраПоУмолчаниюРасширеннаяПодсказка" id="151"/>
 									</Button>
 								</ChildItems>
 							</ContextMenu>
@@ -632,8 +632,20 @@
 			</ToolTip>
 			<Action>ВыполнитьОперацию</Action>
 		</Command>
-		<Command name="Команда1" id="4">
-			<Action>Команда1</Action>
+		<Command name="ЗаполнитьЗначениеПараметраПоУмолчанию" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить значение параметра по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить значение параметра по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьЗначениеПараметраПоУмолчанию</Action>
 		</Command>
 	</Commands>
 </Form>

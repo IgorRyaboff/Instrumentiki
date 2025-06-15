@@ -50,6 +50,9 @@
 			</Popup>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="АдресВебСервиса" id="26">
 			<DataPath>АдресВебСервиса</DataPath>
